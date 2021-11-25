@@ -1,0 +1,22 @@
+[
+    {
+        "icon": "bx bx-shopping-bag",
+        "count": "R$1,995",
+        "title": "Média vendas"
+    },
+    {
+        "icon": "bx bx-cart",
+        "count": "2,001",
+        "title": "Visitas diárias"
+    },
+    {
+        "icon": "bx bx-dollar-circle",
+        "count": "R$2,632",
+        "title": "Renda total"
+    },
+    {
+        "icon": "bx bx-receipt",
+        "count": "1,711",
+        "title": "Total de pedidos"
+    }
+]
