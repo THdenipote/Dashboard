@@ -45,12 +45,12 @@ const Dashboard = () => {
     this.setState({Dashboard: response.data});
 } */
 
-/* async componentDidMount() {
+/*  async componentDidMount() {
     const url = "https://purple-ecommerce.herokuapp.com/pedido/total/renda";
     const response = await fetch(url);
     const data = await response.json();
     this.setState({ person: data.results[0], loading: false });
-} */
-
+} 
+ */
 
 export default Dashboard
