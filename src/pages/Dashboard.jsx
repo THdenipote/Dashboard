@@ -1,10 +1,19 @@
-import React from 'react'
+import React,{useEffect} from 'react'
+
+import axios from 'axios'
 
 import StatusCard from '../components/status-card/StatusCard'
 
 import statusCards from '../assets/JsonData/status-card-data.json'
 
 const Dashboard = () => {
+    useEffect(() => {
+        const totalRenda = async () => {
+            const {data} = await axios.get('https://purple-ecommerce.herokuapp.com/pedido/total/renda')
+            console.log(data)
+        }
+        totalRenda()
+    }, [])
     return (
         <div>
             <h2 className="page-header">Dashboard</h2>
@@ -35,22 +44,5 @@ const Dashboard = () => {
 
 }
 
-/* async componentDidMount() {
-    // GET request using fetch with async/await
-    const response = await fetch('https://purple-ecommerce.herokuapp.com/pedido/total/renda');
-    //const data = await response.json();
-    //this.setState({ totalReactPackages: data.total })
-    console.log(response.data);
-
-    this.setState({Dashboard: response.data});
-} */
-
-/*  async componentDidMount() {
-    const url = "https://purple-ecommerce.herokuapp.com/pedido/total/renda";
-    const response = await fetch(url);
-    const data = await response.json();
-    this.setState({ person: data.results[0], loading: false });
-} 
- */
 
 export default Dashboard
