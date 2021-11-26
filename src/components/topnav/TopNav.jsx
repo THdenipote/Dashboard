@@ -8,12 +8,12 @@ import Dropdown from '../dropdown/Dropdown'
 
 import notifications from '../../assets/JsonData/notification.json'
 
-import user_image from '../../assets/images/tuat.png'
+import user_image from '../../assets/images/user.svg'
 
 import user_menu from '../../assets/JsonData/user_menus.json'
 
 const curr_user = {
-    display_name: 'Tuat Tran',
+    display_name: 'Usuário',
     image: user_image
 }
 
@@ -48,8 +48,8 @@ const Topnav = () => {
     return (
         <div className='topnav'>
             <div className="topnav__search">
-                <input type="text" placeholder='Search here...' />
-                <i className='bx bx-search'></i>
+{/*                 <input type="text" placeholder='Search here...' />
+                <i className='bx bx-search'></i> */}
             </div>
             <div className="topnav__right">
                 <div className="topnav__right-item">
@@ -62,8 +62,8 @@ const Topnav = () => {
                 </div>
                 <div className="topnav__right-item">
                     <Dropdown
-                        icon='bx bx-bell'
-                        badge='12'
+                        /* icon='bx bx-bell'
+                        badge='12' */
                         contentData={notifications}
                         renderItems={(item, index) => renderNotificationItem(item, index)}
                         renderFooter={() => <Link to='/'>View All</Link>}
